@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"contact= "id=edge">
+        <meta name ="viewpoint"content="width=device-width,initial-scale=1.0">
+        <title>personal portfolio web</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/65e886a56c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+ <!---------------<i class="fa-solid fa-xmark" onclick="closemenu"></i>----->
+            </ul>
+         <!-----------<i class="fa-solid fa-bars" onclick="openmenu"></i>------------>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Himanshu</span><br>from India</h1>
+        </div>
+    </div>
+</div>
+<!----------------------------about-------------------------------------------------------------------------->
+<div id ="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hello, I'm Himanshu, based in Durg chhattisgargarh, passionate about 
+                crafting exceptional user experiences through UI/UX design and video editing.
+                With a robust background in both fields, I bring creativity, technical proficiency,
+                and a keen eye for detail to every project I undertake</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experiences')">Experiences</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                        <li><span>Graphics</span><br>Designing Logo & Posters</li>
+                        <li><span>Editing</span><br>Flim editing/Video Editing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiences">
+                    <ul>
+                        <li><span>2024-Current</span><br>lead Editor at BIT Durg (collage)</li>
+                        <li><span>2022-2023</span><br>Team lead at vissualx co </li>
+                        <li><span>2023</span><br>Internship at space x</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2026</span><br>Currently percuing Bachelor degree in Artificial Inteligence from BIT Durg </li>
+                        <li><span>2022</span><br>Hsc from KVS Dongargarh </li>
+                        <li><span>2020</span><br>Ssc from KVS Dongargarh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services-------------event.currentTarget.classList.add("active-link") line 93 ---->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-uikit"></i>
+                <h2>UI/UX</h2>
+                <p>We prioritize intuitive navigation and user-friendly interfaces to enhance the overall user experience.
+                     Our goal is to keep your visitors engaged and convert them into loyal customers.</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-codepen"></i>
+                <h2>Web Design</h2>
+                <p> Every project starts with a blank canvas. 
+                    We work closely with you to understand your brand identity and 
+                    create a website that reflects your
+                    unique personality and values..</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen"></i>
+                <h2>Graphics Design</h2>
+                <p> "Empower your brand with stunning visuals crafted by our expert graphic designers. From logos to marketing materials, 
+                    we specialize in creating impactful designs that resonate with your audience and elevate your brand identity."</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-film"></i>
+                <h2>Film Editing</h2>
+                <p> Transform your raw footage into a cinematic masterpiece with our professional film editing service.
+                    Whether you're a filmmaker, content creator, or business looking to engage your audience through compelling visuals</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="Work-list">
+            <div class="Work">
+                <img src="work1.png">
+                <div class="layer">
+                    <h3>ID Scanner</h3>
+                    <p>This App is used by the univercity to check the student details by scanning the given qr on there id card </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Work">
+                <img src="work2.png">
+                <div class="layer">
+                    <h3>Code Editor</h3>
+                    <p>Code Editor is a software whare you can code diffrent language and get result at instant </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Work">
+                <img src="work3.png">
+                <div class="layer">
+                    <h3>Visual X</h3>
+                    <p>Visual x is a software for the blind and deef people the can handle this app by hand gesture and voice command </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!---------------------------------Contact----------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hrx@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>11111111111</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/himanshu.ramteke.9843/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/himansxhu_/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCb6wEgLfWoZETJ2xmruigqQ"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="fake cv.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name ="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea type="Message" rows="6" placeholder="Your message"></textarea>
+                <button type="submit" class=" btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Himanshu <i class="fa-solid fa-dragon"></i></p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        document.getElementById(tabname).classList.add("active-tab");
+    } 
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        closemenu.style.right="200px";
+    }
+</script>
+
+</body>
+</html>
